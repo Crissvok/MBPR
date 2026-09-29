@@ -1,0 +1,31 @@
+@host = https://animated-pancake-p7w7w744v646f7pgx-5113.app.github.dev
+GET {{host}}/api/students
+###
+GET {{host}}/api/students/1
+###
+POST {{host}}/api/students
+Content-Type: application/json
+
+{
+  "name": "Мария",
+  "course": 1
+}
+
+###
+PUT {{host}}/api/students/1
+Content-Type: application/json
+
+{
+  "name": "Анна Петрова",
+  "course": 3
+}
+###
+DELETE {{host}}/api/students/2
+###
+POST {{host}}/api/students
+Content-Type: application/json
+
+{
+  "name": "",
+  "course": 7
+}
